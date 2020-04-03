@@ -10,6 +10,8 @@ use Drupal\Core\TypedData\DataDefinition;
 /**
  * Defines the 'mrmilu_block_plugin' entity field type.
  *
+ * Allows the selection of block plugins with the allow_as_block_plugin_field => TRUE annotation
+ *
  * @FieldType(
  *   id = "mrmilu_block_plugin",
  *   label = @Translation("Mr. Milú Block Plugin"),
