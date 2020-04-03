@@ -1,0 +1,6 @@
+name: Mr. Milú Fields
+description: Provides some custom fields
+package: Mr. Milú
+
+type: module
+core: 8.x
