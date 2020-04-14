@@ -1,21 +1,16 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\Random\Plugin\Field\FieldFormatter\RandomDefaultFormatter.
- */
-
 namespace Drupal\mrmilu_fields\Plugin\Field\FieldFormatter;
 
 use Drupal\Core\Field\FormatterBase;
 use Drupal\Core\Field\FieldItemListInterface;
 
 /**
- * Plugin implementation of the 'Random_default' formatter.
+ * Plugin implementation of the 'HTML Tag' formatter.
  *
  * @FieldFormatter(
  *   id = "mr_tag_formatter",
- *   label = @Translation("Tag formatter"),
+ *   label = @Translation("HTML Tag"),
  *   field_types = {
  *     "mr_tag"
  *   },

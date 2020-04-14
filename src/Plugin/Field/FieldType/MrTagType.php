@@ -9,7 +9,7 @@ use Drupal\Core\TypedData\DataDefinition;
 use Drupal\Core\TypedData\Exception\MissingDataException;
 
 /**
- * Provides a field type of inline
+ * Provides a selector for a HTML tag and its value
  *
  * @FieldType(
  *   id = "mr_tag",
@@ -62,7 +62,7 @@ class MrTagType extends FieldItemBase implements FieldItemInterface {
   }
 
   public function setValue($values, $notify = TRUE) {
-    // If empty tag, not store values
+    // If empty tag, do not store values
     if ($values) {
       $value = $values['value'];
       $tag = $value ? $values['tag'] : NULL;
