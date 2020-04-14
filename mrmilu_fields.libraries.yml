@@ -1,0 +1,10 @@
+mrmilu_fields_color_spectrum:
+  js:
+    libraries/spectrum/spectrum.js: {}
+    js/spectrum.jquery.js: {}
+  css:
+    component:
+      libraries/spectrum/spectrum.css: {}
+      css/spectrum.css: {}
+  dependencies:
+    - core/jquery
