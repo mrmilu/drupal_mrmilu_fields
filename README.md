@@ -18,3 +18,8 @@ Allows to reference and print a custom block plugin. You only need to put `allow
  * )
  */
 ~~~~
+
+### Mr. Milú Color:
+Provides a field type to store a color in hexadecimal format.
+
+It also provides a widget to select the color with a colorpicker.
