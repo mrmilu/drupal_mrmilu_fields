@@ -23,3 +23,10 @@ Allows to reference and print a custom block plugin. You only need to put `allow
 Provides a field type to store a color in hexadecimal format.
 
 It also provides a widget to select the color with a colorpicker.
+
+### Mr. Tag:
+Provides a field type to store a text with its associated tag:
+- Text: Lorem ipsum
+- Tag: h1
+
+It prints: <h1>Lorem ipsum</h1>
