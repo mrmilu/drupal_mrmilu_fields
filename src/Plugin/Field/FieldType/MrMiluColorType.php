@@ -84,44 +84,4 @@ class MrMiluColorType extends FieldItemBase {
 
     return $constraints;
   }
-
-  /**
-   * {@inheritdoc}
-   */
-  public function preSave() {
-    parent::preSave();
-    dpm($this->color, 'COLOR');
-
-    /*if ($format = $this->getSetting('format')) {
-      $color = $this->color;
-
-      // Clean up data and format it.
-      $color = trim($color);
-
-      if (substr($color, 0, 1) === '#') {
-        $color = substr($color, 1);
-      }
-
-      switch ($format) {
-        case '#HEXHEX':
-          $color = '#' . strtoupper($color);
-          break;
-
-        case 'HEXHEX':
-          $color = strtoupper($color);
-          break;
-
-        case '#hexhex':
-          $color = '#' . strtolower($color);
-          break;
-
-        case 'hexhex':
-          $color = strtolower($color);
-          break;
-      }
-
-      $this->color = $color;
-    }*/
-  }
-
 }
