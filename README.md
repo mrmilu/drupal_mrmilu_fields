@@ -30,3 +30,9 @@ Provides a field type to store a text with its associated tag:
 - Tag: h1
 
 It prints: <h1>Lorem ipsum</h1>
+
+### Mr. Address
+Provides a field type to store latitude and longitude and their associated address in text:
+- Latitude: 40.4286513
+- Longitude: -3.7019541
+- Address: Calle Sagasta 15
