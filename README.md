@@ -19,6 +19,17 @@ Allows to reference and print a custom block plugin. You only need to put `allow
  */
 ~~~~
 
+Version 4 supports PHP Attributes:
+~~~~
+#[Block(
+  id: "category_products_block",
+  admin_label: new TranslatableMarkup("Category products"),
+  context_definitions: [
+    'allow_as_block_plugin_field_context' => new ContextDefinition('boolean'),
+  ]
+)]
+~~~~
+
 ### Mr. Milú Color:
 Provides a field type to store a color in hexadecimal format.
 

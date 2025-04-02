@@ -1,0 +1,5 @@
+services:
+  mrmilu_fields.allow_as_plugin_field_context:
+    class: Drupal\mrmilu_fields\ContextProvider\AllowAsBlockPluginFieldContext
+    tags:
+      - { name: 'context_provider' }

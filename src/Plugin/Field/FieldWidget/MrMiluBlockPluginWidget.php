@@ -103,7 +103,13 @@ class MrMiluBlockPluginWidget extends WidgetBase implements ContainerFactoryPlug
     $options = ['_none' => t('- None -')];
     $definitions = $this->blockManager->getDefinitionsForContexts($this->contextRepository->getAvailableContexts());
     foreach ($definitions as $id => $definition) {
+      // Default support for Annotations.
       if (!empty($definition['allow_as_block_plugin_field'])) {
+        $options[$id] = $definition['admin_label'];
+        continue;
+      }
+      // Support for PHP Attributes.
+      if (isset($definition['context_definitions']['allow_as_block_plugin_field_context'])) {
         $options[$id] = $definition['admin_label'];
       }
     }
